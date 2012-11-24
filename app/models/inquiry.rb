@@ -19,5 +19,21 @@ module Inquiries
       include_spam ? limit(number) : ham.limit(number)
     end
 
+    def self.send_confirmation?
+
+    end
+
+    def self.notification_recipients
+
+    end
+
+    def self.notification_subject
+
+    end
+
+    def self.confirmation_subject
+
+    end
+
   end
 end
