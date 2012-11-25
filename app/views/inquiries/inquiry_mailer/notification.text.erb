@@ -1,0 +1,9 @@
+Hello,
+
+You've received a new inquiry:
+
+From: <%= @inquiry.name %>
+Email: <%= @inquiry.email %>
+
+Message:
+<%=strip_tags(@inquiry.message) %>
