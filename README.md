@@ -14,3 +14,9 @@ Run the generator and migrate:
 
     rails g inquiries
     rake db:migrate
+
+This will generate a config file and migration to create the inquiries table.
+
+You can customize the inquiry settings in config/inquiries.yml.
+
+You can override any of the views and mailers by duplicating them in your own application and making your changes.
