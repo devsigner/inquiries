@@ -9,5 +9,6 @@ class InquiriesGenerator < Rails::Generators::Base
 
   def copy_files(*args)
     migration_template 'create_inquiries.rb', 'db/migrate/create_inquiries.rb'
+    copy_file 'inquiry.yml', 'config/inquiry.yml'
   end
 end

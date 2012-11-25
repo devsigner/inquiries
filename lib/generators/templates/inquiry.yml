@@ -1,0 +1,4 @@
+send-confirmation: true
+notification-recipients: []
+notification-subject: 'New inquiry recieved.'
+confirmation-subject: 'Thank you. We have recieved your inquiry.'
