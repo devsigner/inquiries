@@ -9,7 +9,7 @@ module Inquiries
     end
 
     def create
-      @inquiry = Inquiries::Inquiry.new(params[:inquiry])
+      @inquiry = Inquiries::Inquiry.new(params[:inquiries_inquiry])
 
       if @inquiry.save
         if @inquiry.ham?
@@ -26,7 +26,7 @@ module Inquiries
           end if Inquiries::Inquiry.send_confirmation?
         end
 
-        redirect_to inquiries.thank_you_inquiries_inquiries_path
+        redirect_to thank_you_inquiries_inquiries_path
       else
         render :action => 'new'
       end
