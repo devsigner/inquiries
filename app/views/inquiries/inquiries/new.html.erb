@@ -1,0 +1,20 @@
+<div class='inquiries'>
+  <%= form_for @inquiry do |f| %>
+    <%= render "error_messages", :object => @inquiry %>
+    <div class="field">
+      <%= f.label :name %>
+      <%= f.text_field :name, :class => 'text', :required => 'required', :placeholder => 'Name' %>
+    </div>
+    <div class="field">
+      <%= f.label :email %>
+      <%= f.email_field :email, :class => 'text email', :required => 'required', :placeholder => 'Email' %>
+    </div>
+    <div class='field message_field'>
+      <%= f.label :message %>
+      <%= f.text_area :message, :rows => 8, :required => 'required', :placeholder => 'Message' %>
+    </div>
+    <div class="actions">
+      <%= f.submit 'Send Message' %>
+    </div>
+  <% end %>
+</div>
