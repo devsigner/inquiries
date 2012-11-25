@@ -20,19 +20,25 @@ module Inquiries
     end
 
     def self.send_confirmation?
-
+      settings['send-confirmation'] ? true : false
     end
 
     def self.notification_recipients
-
+      settings['notification-recipients']
     end
 
     def self.notification_subject
-
+      settings['notification-subject']
     end
 
     def self.confirmation_subject
+      settings['confirmation-subject']
+    end
 
+    protected
+
+    def self.settings
+      @settings ||= YAML.load_file('config/inquiry.yml')
     end
 
   end
