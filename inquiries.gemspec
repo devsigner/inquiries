@@ -17,6 +17,6 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
 
-  s.add_dependency 'filters_spam', '~> 0.2'
-  s.add_dependency 'actionmailer'
+  gem.add_dependency 'filters_spam', '~> 0.2'
+  gem.add_dependency 'actionmailer'
 end
