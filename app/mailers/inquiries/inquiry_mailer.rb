@@ -3,7 +3,7 @@ module Inquiries
 
     def confirmation(inquiry, request)
       @inquiry = inquiry
-      mail :subject   => Inquiries::Inquiry.confirmation_subject,
+      mail :subject   => I18n.t('inquiry.confirmation-subject'),
            :to        => inquiry.email,
            :from      => "no-reply@#{request.domain}",
            :reply_to  => Inquiries::Inquiry.notification_recipients.split(',').first
@@ -11,7 +11,7 @@ module Inquiries
 
     def notification(inquiry, request)
       @inquiry = inquiry
-      mail :subject   => Inquiries::Inquiry.notification_subject,
+      mail :subject   => I18n.t('inquiry.notification-subject'),
            :to        => Inquiries::Inquiry.notification_recipients,
            :from      => "no-reply@#{request.domain}",
            :reply_to  => inquiry.email

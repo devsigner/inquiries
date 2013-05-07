@@ -1,0 +1,18 @@
+fr:
+  activerecord:
+    models:
+    attributes:
+      inquiries:
+        inquiry:
+          name: Nom
+
+  inquiry:
+    notification-subject: 'Nouveau message reçu.'
+    confirmation-subject: 'Merci. Nous avons reçu votre message.'
+    thank-you: Thank you for your inquiry. We will get back to you as soon as we can. 
+    new_inquiry_title: Contact
+    form:
+      name: Votre nom
+      email: Votre email
+      message: Message
+      submit: Envoyer le Message

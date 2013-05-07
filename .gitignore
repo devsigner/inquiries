@@ -15,3 +15,9 @@ spec/reports
 test/tmp
 test/version_tmp
 tmp
+
+app/.DS_Store
+
+app/controllers/.DS_Store
+
+app/controllers/inquiries/.DS_Store

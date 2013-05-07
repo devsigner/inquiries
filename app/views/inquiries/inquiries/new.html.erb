@@ -2,19 +2,19 @@
   <%= form_for @inquiry do |f| %>
     <%= render "error_messages", :object => @inquiry %>
     <div class="field">
-      <%= f.label :name %>
-      <%= f.text_field :name, :class => 'text', :required => 'required', :placeholder => 'Name' %>
+      <%= f.label :name, t('inquiry.form.name') %>
+      <%= f.text_field :name, :class => 'text', :required => 'required', :placeholder => t('inquiry.form.name') %>
     </div>
     <div class="field">
-      <%= f.label :email %>
-      <%= f.email_field :email, :class => 'text email', :required => 'required', :placeholder => 'Email' %>
+      <%= f.label :email, t('inquiry.form.email') %>
+      <%= f.email_field :email, :class => 'text email', :required => 'required', :placeholder => t('inquiry.form.email') %>
     </div>
     <div class='field message_field'>
-      <%= f.label :message %>
-      <%= f.text_area :message, :rows => 8, :required => 'required', :placeholder => 'Message' %>
+      <%= f.label :message, t('inquiry.form.message') %>
+      <%= f.text_area :message, :rows => 8, :required => 'required', :placeholder => t('inquiry.form.message') %>
     </div>
     <div class="actions">
-      <%= f.submit 'Send Message' %>
+      <%= f.submit t('inquiry.form.submit') %>
     </div>
   <% end %>
 </div>
